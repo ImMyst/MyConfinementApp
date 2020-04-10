@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'My Confinement',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               Navigator.pop(context);
               Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new AgendaPage()));
+                builder: (BuildContext context) => new ToDoListPage()));
             },
           ),
           ListTile(
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               Navigator.pop(context);
               Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new CompassPage()));
+                builder: (BuildContext context) => new MapPage()));
             },
           ),
           ListTile(
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               Navigator.pop(context);
               Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new MapPage()));
+                builder: (BuildContext context) => new CompassPage()));
             },
           ),
           ListTile(
@@ -79,7 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
             onTap: () {
               Navigator.pop(context);
               Navigator.push(context, new MaterialPageRoute(
-                builder: (BuildContext context) => new ToDoListPage()));
+                builder: (BuildContext context) => new AgendaPage()));
             },
           ),
         ],

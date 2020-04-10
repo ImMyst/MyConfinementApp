@@ -11,7 +11,7 @@ class _MapPageState extends State<MapPage> {
     return Scaffold(
       appBar: new AppBar(
         title: new Text(
-          'Map'
+          'Carte'
         )
       ),
     );
