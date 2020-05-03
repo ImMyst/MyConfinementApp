@@ -1,4 +1,4 @@
-package com.example.my_confinement
+package com.example.myconfinement
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity

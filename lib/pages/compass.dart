@@ -11,7 +11,9 @@ class CompassPage extends StatelessWidget {
     Widget build(BuildContext context) {
       return Scaffold(
           appBar: AppBar(
-            title: Text('Boussole')
+            title: Text(
+              'Boussole'
+            )
           ),
           body: Compass()
       );
