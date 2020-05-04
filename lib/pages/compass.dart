@@ -10,11 +10,6 @@ class CompassPage extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
       return Scaffold(
-          appBar: AppBar(
-            title: Text(
-              'Boussole'
-            )
-          ),
           body: Compass()
       );
     }
@@ -73,7 +68,7 @@ class CompassPainter extends CustomPainter {
     void paint(Canvas canvas, Size size) {
 
         Paint circle = _brush
-            ..color = Colors.indigo[400].withOpacity(0.6);
+            ..color = Colors.teal[400].withOpacity(0.6);
 
         Paint needle = _brush
             ..color = Colors.red[400];

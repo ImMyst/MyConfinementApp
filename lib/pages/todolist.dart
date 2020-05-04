@@ -41,9 +41,6 @@ class _ToDoListPageState extends State<ToDoListPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("ToDoList"),
-      ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           showDialog(
@@ -52,7 +49,7 @@ class _ToDoListPageState extends State<ToDoListPage> {
                 return AlertDialog(
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8)),
-                  title: Text("Add Todolist"),
+                  title: Text("Ajouter un ToDo"),
                   content: TextField(
                     onChanged: (String value) {
                       todoTitle = value;
@@ -62,10 +59,9 @@ class _ToDoListPageState extends State<ToDoListPage> {
                     FlatButton(
                         onPressed: () {
                           createTodos();
-
                           Navigator.of(context).pop();
                         },
-                        child: Text("Add"))
+                        child: Text("Ajouter"))
                   ],
                 );
               });
