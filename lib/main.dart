@@ -26,17 +26,17 @@ class _MyAppState extends State<MyApp> {
 
   List _pages = [
     new ToDoListPage(),
-    new CompassPage(),
-    new HomePage(),
     new MapPage(),
+    new HomePage(),
+    new CompassPage(),
     new AgendaPage()
   ];
 
   List _titles = [
     'ToDo List',
-    'Boussole',
-    'My Confinement',
     'Carte',
+    'My Confinement',
+    'Boussole',
     'Agenda',
   ];
 
